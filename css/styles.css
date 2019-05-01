@@ -1,0 +1,249 @@
+/* Base Element Styles
+   ========================================================================== */
+
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f3f3f3;
+    color: #494949;
+}
+
+h1 {
+    font-size: 1.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #91919159;
+    display: block;
+    padding: .8em;
+}
+
+a:hover {
+    color: #494949;
+    transition: .5s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+h2 {
+    font-size: 1em;
+    padding-top: 6em;
+    padding-bottom: 1em;
+}
+
+h4 {
+    margin: 0;
+}
+
+h1,
+h2,
+h4,
+a {
+    text-shadow: 1px 0 1.5px #494949;
+    font-weight: 900;
+}
+
+hr {
+    margin-bottom: 2em;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-width: 1.5px;
+}
+
+/* Base Layout Styles
+   ========================================================================== */
+
+.main-header,
+.main-footer {
+    background-color: rgba(238, 236, 236, 0.74);
+}
+
+.inner-container,
+.profile-container,
+.portfolio-container,
+.skills-container,
+.contact-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile-img {
+    padding-top: 3em;
+}
+
+.profile-info {
+    font-size: 1.1em;
+    color: #494949c5;
+    font-weight: 500;
+}
+
+.portfolio-img {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.skills-container li {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+    padding-bottom: 2em;
+    cursor: default;
+    color: #49494981;
+}
+
+.skills-container li:hover {
+    color: #494949;
+    transition: .5s;
+}
+
+.skills-container h2 {
+    padding-bottom: 3em;
+}
+
+.contact-info {
+    padding-bottom: 4em;
+    color: #646464d3;
+}
+
+.main-footer {
+    padding-bottom: 3em;
+}
+
+.student-name-footer {
+    float: left;
+}
+
+.footer-nav-small {
+    float: right;
+    font-size: .9em;
+}
+
+.footer-nav-small a {
+    padding-top: 0;
+}
+
+.footer-nav {
+    display: none;
+}
+
+/* Media Queries
+   ========================================================================== */
+
+   @media (min-width: 768px) {
+
+    h1 {
+        margin-top: 0;
+        padding-top: 55px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+    }
+
+    .profile-info {
+        float: left;
+        width: 60%;
+        padding-top: 3em;
+        padding-right: 3em;
+        margin: 0;
+        text-align: left;
+    }
+
+    .profile-img {
+        float: right;
+        width: 40%;
+    }
+
+    .portfolio-content {
+        float: left;
+        width: 50%;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    .portfolio-content p {
+        min-height: 7em;
+    }
+
+    .contact-info {
+        width:70%;
+        margin: auto;
+    }
+  
+    .footer-nav-small {
+      display: none;
+    }
+
+    .footer-nav,
+    .footer-nav li {
+        display: inline-block;
+    }
+
+    .footer-nav {
+        float: right;
+        padding-bottom: 6em;
+    }
+
+    .footer-nav a {
+        float: right;
+        padding-top: 0em;
+    }
+
+    .clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+  @media (min-width: 1024px) {
+
+    h1 {
+        margin-top: 0;
+    }
+
+    h1,
+    .main-nav {
+        padding-top: 55px;
+    }
+
+    .student-name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .portfolio-content {
+        width: 33.33%;
+    }
+
+    .contact-info {
+        width:50%;
+    }
+
+    .footer-nav {
+        padding-bottom: 30px;
+    }
+
+}
