@@ -200,7 +200,10 @@ hr {
 
     .footer-nav {
         float: right;
-        padding-bottom: 6em;
+    }
+
+    .main-footer {
+        padding-bottom: 7em;
     }
 
     .footer-nav a {
@@ -242,8 +245,8 @@ hr {
         width:50%;
     }
 
-    .footer-nav {
-        padding-bottom: 30px;
+    .main-footer {
+        padding-bottom: 3em;
     }
 
 }
